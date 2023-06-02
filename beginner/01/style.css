@@ -23,8 +23,8 @@ list-style: none;
 
 .wrapper {
     max-width: 960px;
-    margin: 0 auto;
-    padding: 10px 4%;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
     text-align: center;
 }
 
@@ -37,7 +37,7 @@ list-style: none;
 }
 
 .content-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 10px 0;
 }
 
@@ -51,7 +51,7 @@ list-style: none;
 
 #header ul {
     display: flex;
-    padding: 10px 0;
+    padding: 25px 0;
 }
 
 #header li {
@@ -74,7 +74,7 @@ list-style: none;
 #mainvisual img {
     width: 100%;
     max-width: 1920px;
-    height: 600px;
+    height: 655px;
     object-fit: cover;
 }
 
@@ -84,6 +84,7 @@ list-style: none;
 #about .content{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #about img {
@@ -97,3 +98,55 @@ list-style: none;
     text-align: left;
 
 }
+
+#footer {
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* --------- bicycle -----------*/
+#bicycle ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bicycle li {
+    width: 32%;
+    
+}
+
+#bicycle img {
+    max-width: 100%;
+}
+
+/* ---------- Responsive -----------*/
+
+@media screen and (max-width: 600px) {
+    
+    /* ---------- main -----------*/
+    #mainvisual img {
+        height: calc(100vh - 60px);
+    }
+
+    /* ---------- about -----------*/
+    #about .content {
+        flex-direction: column;
+    }
+
+    #about img {
+        margin-right: 0;
+    }
+
+    /* ---------- bycycle -----------*/
+    #bicycle ul {
+        flex-direction: column;
+    }
+
+    #bicycle li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    }
