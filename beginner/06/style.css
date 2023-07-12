@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Crimson Text', serif;
+}
+a {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+#header {
+    width:90vw;
+    margin: 4% auto 0 auto;
+}
+
+#header img {
+    width: 100%;
+}
+
+#navi {
+    display: flex;
+    width: 90vw;
+    margin: 20px auto 0 auto;
+
+}
+
+#navi h1 {
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 19px;
+    margin-right: 50px;
+
+}
+
+#navi ul {
+    display: flex;
+
+}
+
+#navi li {
+    margin-right: 30px;
+    font-size: 0.75rem;
+    list-style: none;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 0 18px;
+}
+
+.concept {
+    display: flex;
+}
+
+.concept-img {
+    width: 50%;
+}
+
+.concept-img img{
+    width: 100%;
+}
+
+.concept-message {
+    width: 50%;
+}
+
+.concept-message h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
