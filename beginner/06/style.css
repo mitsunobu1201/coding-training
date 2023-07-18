@@ -23,7 +23,6 @@ a {
     display: flex;
     width: 90vw;
     margin: 20px auto 0 auto;
-
 }
 
 #navi h1 {
@@ -53,6 +52,12 @@ a {
 
 .concept {
     display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.concept-second {
+     flex-direction: row-reverse;
 }
 
 .concept-img {
@@ -65,10 +70,71 @@ a {
 
 .concept-message {
     width: 50%;
+    text-align: center;
+    padding: 0 7%;
+    box-sizing: border-box;
+
 }
 
-.concept-message h1 {
+.concept-message h2 {
     font-size: 1.5rem;
     font-weight: normal;
     margin-bottom: 4px;
+    text-align: left;
+}
+
+.concept-message span {
+    display: block;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.concept-message p {
+    text-align: left;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#footer p:first-child {
+    font-size: 0.9rem;
+}
+
+#footer p:last-child {
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width: 767px) {
+
+    #header {
+        width: 100%;
+        margin: 0;
+    }
+
+    #navi {
+        display: flex;
+        width: 100vw;
+        margin: 20px 18px;
+    }
+
+    .concept {
+        display:block;
+    }
+
+    .concept-img {
+        width: 100%;
+    }
+
+    .concept-message {
+        padding: 0;
+        width: 100%;
+    }
+
+    .concept-message h2 {
+        font-size: 1.2rem;
+    }
 }
